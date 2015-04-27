@@ -1,2 +1,3 @@
 # AppStore-Horizontal-Demo
-根据新版 "半糖App" 个人中心模块风格 编写的一个横向滚动的TabeView
+仿 AppStore 、 [半糖App](https://itunes.apple.com/cn/app/ban-tang/id955357564?mt=8) 个人中心收藏列表风格 编写的一个横向多Cell的滚动的Demo  
+![Alt text](./IMG_2471.PNG)
