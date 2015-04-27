@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "HorizonScrollTableView.h"
 #import "CategoryModel.h"
-#import "LikeitemModel.h"
+#import "CollectModel.h"
 
 #import "DetailViewCtroller.h"
 
@@ -70,7 +70,7 @@
         
         NSMutableArray *itemArray = [NSMutableArray arrayWithCapacity:10];
         for (int i = 0 ; i< 5; i++) {
-            LikeitemModel *item = [[LikeitemModel alloc] init];
+            CollectModel *item = [[CollectModel alloc] init];
             item.title = [NSString stringWithFormat:@"%@--(%ld)",objname,i*idx];
             if (type != CenterTableViewTopic) {
                 item.price = [NSString stringWithFormat:@"￥%ld",(i+1)*(idx+1)*2];
@@ -141,7 +141,7 @@
     {
         DetailViewCtroller *detailVC = [[DetailViewCtroller alloc] init];
         CategoryModel *model = _dataSource[tableViewIndexPath.row];
-        LikeitemModel *likeModel =  model.datalist[contentIndexPath.row];
+        CollectModel *likeModel =  model.datalist[contentIndexPath.row];
         detailVC.title = likeModel.title;
         detailVC.view.backgroundColor = likeModel.backgroundColor;
         [self.navigationController pushViewController:detailVC animated:YES];

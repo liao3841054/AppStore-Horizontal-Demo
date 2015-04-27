@@ -8,7 +8,7 @@
 
 #import "BaseModel.h"
 #import <UIKit/UIKit.h>
-@interface LikeitemModel : BaseModel
+@interface CollectModel : BaseModel
 {
 }
 @property (nonatomic, copy) NSString *object_id;

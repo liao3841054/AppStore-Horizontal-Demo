@@ -9,7 +9,7 @@
 #import "HorizonScrollTableView.h"
 #import "HorzonItemCell.h"
 #import "CategoryModel.h"
-#import "LikeitemModel.h"
+#import "CollectModel.h"
 //#import "CenterEmptyView.h"
 
  NSString *const KTopicCollctionCell = @"TopicCollctionCell";
@@ -130,7 +130,7 @@
     {
         if (category.datalist.count > 0) {
             if ((contentIndexPath.row-1) < category.datalist.count) {
-                LikeitemModel *item = [category.datalist objectAtIndex:contentIndexPath.row-1];
+                CollectModel *item = [category.datalist objectAtIndex:contentIndexPath.row-1];
                 if (item) {
                     [cell isNormalCell:item];
                 }

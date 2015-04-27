@@ -7,7 +7,7 @@
 //
 
 #import "CategoryModel.h"
-#import "LikeitemModel.h"
+#import "CollectModel.h"
 
 @implementation CategoryModel
 

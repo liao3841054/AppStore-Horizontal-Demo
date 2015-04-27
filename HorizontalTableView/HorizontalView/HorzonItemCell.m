@@ -9,7 +9,7 @@
 #import "HorzonItemCell.h"
 #import "UIView+ViewConstraint.h"
 #import "BaseModel.h"
-#import "LikeitemModel.h"
+#import "CollectModel.h"
 
 @implementation HorzonItemCell
 
@@ -112,7 +112,7 @@
 {
     [self hiddenDescView:NO];
 
-    LikeitemModel *likeItem = (LikeitemModel *)model;
+    CollectModel *likeItem = (CollectModel *)model;
     _mTitleLabel.text = likeItem.title;
     
     if (![self isEmpty:likeItem.price])

@@ -21,7 +21,7 @@
 		92DA64BE1AEA49AF00EB0135 /* HorizonScrollTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64BD1AEA49AF00EB0135 /* HorizonScrollTableView.m */; };
 		92DA64C11AEA4AF900EB0135 /* HorzonItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C01AEA4AF900EB0135 /* HorzonItemCell.m */; };
 		92DA64C71AEA4E2600EB0135 /* UIView+ViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */; };
-		92DA64CC1AEA638700EB0135 /* LikeitemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C91AEA638700EB0135 /* LikeitemModel.m */; };
+		92DA64CC1AEA638700EB0135 /* CollectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C91AEA638700EB0135 /* CollectModel.m */; };
 		92DA64CD1AEA638700EB0135 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64CB1AEA638700EB0135 /* CategoryModel.m */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,8 @@
 		92DA64C01AEA4AF900EB0135 /* HorzonItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorzonItemCell.m; sourceTree = "<group>"; };
 		92DA64C51AEA4E2600EB0135 /* UIView+ViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ViewConstraint.h"; path = "../AppStore(Horizontal)Demo/UIView+ViewConstraint.h"; sourceTree = "<group>"; };
 		92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ViewConstraint.m"; path = "../AppStore(Horizontal)Demo/UIView+ViewConstraint.m"; sourceTree = "<group>"; };
-		92DA64C81AEA638700EB0135 /* LikeitemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeitemModel.h; sourceTree = "<group>"; };
-		92DA64C91AEA638700EB0135 /* LikeitemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeitemModel.m; sourceTree = "<group>"; };
+		92DA64C81AEA638700EB0135 /* CollectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectModel.h; sourceTree = "<group>"; };
+		92DA64C91AEA638700EB0135 /* CollectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectModel.m; sourceTree = "<group>"; };
 		92DA64CA1AEA638700EB0135 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
 		92DA64CB1AEA638700EB0135 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,8 +182,8 @@
 		92DA64B81AEA280400EB0135 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				92DA64C81AEA638700EB0135 /* LikeitemModel.h */,
-				92DA64C91AEA638700EB0135 /* LikeitemModel.m */,
+				92DA64C81AEA638700EB0135 /* CollectModel.h */,
+				92DA64C91AEA638700EB0135 /* CollectModel.m */,
 				92DA64CA1AEA638700EB0135 /* CategoryModel.h */,
 				92DA64CB1AEA638700EB0135 /* CategoryModel.m */,
 				92DA64B41AEA27F600EB0135 /* BaseModel.h */,
@@ -304,7 +304,7 @@
 				92DA64901AEA26ED00EB0135 /* ViewController.m in Sources */,
 				92DA648D1AEA26ED00EB0135 /* AppDelegate.m in Sources */,
 				92DA648A1AEA26ED00EB0135 /* main.m in Sources */,
-				92DA64CC1AEA638700EB0135 /* LikeitemModel.m in Sources */,
+				92DA64CC1AEA638700EB0135 /* CollectModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

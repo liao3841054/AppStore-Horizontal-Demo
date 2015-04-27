@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 JiuZhouYunDong. All rights reserved.
 //
 
-#import "LikeitemModel.h"
+#import "CollectModel.h"
 
-@implementation LikeitemModel
+@implementation CollectModel
 
 @end
