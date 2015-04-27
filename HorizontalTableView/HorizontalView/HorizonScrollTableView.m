@@ -7,7 +7,7 @@
 //
 
 #import "HorizonScrollTableView.h"
-#import "GoodsCollectionCell.h"
+#import "HorzonItemCell.h"
 #import "CategoryModel.h"
 #import "LikeitemModel.h"
 //#import "CenterEmptyView.h"
@@ -113,9 +113,9 @@
 
 - (UICollectionViewCell *)horizontalCellContentsView:(UICollectionView *)horizontalCellContentsView cellForItemAtContentIndexPath:(NSIndexPath *)contentIndexPath inTableViewIndexPath:(NSIndexPath *)tableViewIndexPath{
     
-    GoodsCollectionCell *cell;
+    HorzonItemCell *cell;
     {
-        cell = (GoodsCollectionCell *)[horizontalCellContentsView dequeueReusableCellWithReuseIdentifier:@"GoodsCollectionCell" forIndexPath:contentIndexPath];
+        cell = (HorzonItemCell *)[horizontalCellContentsView dequeueReusableCellWithReuseIdentifier:@"GoodsCollectionCell" forIndexPath:contentIndexPath];
     }
     CategoryModel *category = [_dataSource objectAtIndex:tableViewIndexPath.row];
     if (contentIndexPath.row == 0 || contentIndexPath.row ==6 ) {

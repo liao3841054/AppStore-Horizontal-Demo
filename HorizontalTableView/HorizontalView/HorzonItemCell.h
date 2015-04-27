@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseModel.h"
-@interface GoodsCollectionCell : UICollectionViewCell
+@interface HorzonItemCell : UICollectionViewCell
 {
     UIImageView *_mCoverView;
     UIView      *_mDescView;

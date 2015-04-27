@@ -19,7 +19,7 @@
 		92DA64B31AEA27D900EB0135 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64B21AEA27D900EB0135 /* BaseTableViewCell.m */; };
 		92DA64B61AEA27F600EB0135 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64B51AEA27F600EB0135 /* BaseModel.m */; };
 		92DA64BE1AEA49AF00EB0135 /* HorizonScrollTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64BD1AEA49AF00EB0135 /* HorizonScrollTableView.m */; };
-		92DA64C11AEA4AF900EB0135 /* GoodsCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C01AEA4AF900EB0135 /* GoodsCollectionCell.m */; };
+		92DA64C11AEA4AF900EB0135 /* HorzonItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C01AEA4AF900EB0135 /* HorzonItemCell.m */; };
 		92DA64C71AEA4E2600EB0135 /* UIView+ViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */; };
 		92DA64CC1AEA638700EB0135 /* LikeitemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C91AEA638700EB0135 /* LikeitemModel.m */; };
 		92DA64CD1AEA638700EB0135 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64CB1AEA638700EB0135 /* CategoryModel.m */; };
@@ -61,8 +61,8 @@
 		92DA64BB1AEA46FB00EB0135 /* HorizontalPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorizontalPrefixHeader.pch; path = "AppStore(Horizontal)Demo/HorizontalPrefixHeader.pch"; sourceTree = "<group>"; };
 		92DA64BC1AEA49AF00EB0135 /* HorizonScrollTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizonScrollTableView.h; sourceTree = "<group>"; };
 		92DA64BD1AEA49AF00EB0135 /* HorizonScrollTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizonScrollTableView.m; sourceTree = "<group>"; };
-		92DA64BF1AEA4AF900EB0135 /* GoodsCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsCollectionCell.h; sourceTree = "<group>"; };
-		92DA64C01AEA4AF900EB0135 /* GoodsCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsCollectionCell.m; sourceTree = "<group>"; };
+		92DA64BF1AEA4AF900EB0135 /* HorzonItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorzonItemCell.h; sourceTree = "<group>"; };
+		92DA64C01AEA4AF900EB0135 /* HorzonItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorzonItemCell.m; sourceTree = "<group>"; };
 		92DA64C51AEA4E2600EB0135 /* UIView+ViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ViewConstraint.h"; path = "../AppStore(Horizontal)Demo/UIView+ViewConstraint.h"; sourceTree = "<group>"; };
 		92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ViewConstraint.m"; path = "../AppStore(Horizontal)Demo/UIView+ViewConstraint.m"; sourceTree = "<group>"; };
 		92DA64C81AEA638700EB0135 /* LikeitemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeitemModel.h; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 			children = (
 				92DA64C51AEA4E2600EB0135 /* UIView+ViewConstraint.h */,
 				92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */,
-				92DA64BF1AEA4AF900EB0135 /* GoodsCollectionCell.h */,
-				92DA64C01AEA4AF900EB0135 /* GoodsCollectionCell.m */,
+				92DA64BF1AEA4AF900EB0135 /* HorzonItemCell.h */,
+				92DA64C01AEA4AF900EB0135 /* HorzonItemCell.m */,
 				92DA64BC1AEA49AF00EB0135 /* HorizonScrollTableView.h */,
 				92DA64BD1AEA49AF00EB0135 /* HorizonScrollTableView.m */,
 				92DA64AE1AEA27A500EB0135 /* HorizontalScrollCell.h */,
@@ -296,7 +296,7 @@
 				92DA64C71AEA4E2600EB0135 /* UIView+ViewConstraint.m in Sources */,
 				92DA64CD1AEA638700EB0135 /* CategoryModel.m in Sources */,
 				9239DE391AEBB1F900D8C151 /* DetailViewCtroller.m in Sources */,
-				92DA64C11AEA4AF900EB0135 /* GoodsCollectionCell.m in Sources */,
+				92DA64C11AEA4AF900EB0135 /* HorzonItemCell.m in Sources */,
 				92DA64BE1AEA49AF00EB0135 /* HorizonScrollTableView.m in Sources */,
 				92DA64B61AEA27F600EB0135 /* BaseModel.m in Sources */,
 				92DA64B31AEA27D900EB0135 /* BaseTableViewCell.m in Sources */,

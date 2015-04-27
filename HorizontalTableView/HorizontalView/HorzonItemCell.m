@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 JiuZhouYunDong. All rights reserved.
 //
 
-#import "GoodsCollectionCell.h"
+#import "HorzonItemCell.h"
 #import "UIView+ViewConstraint.h"
 #import "BaseModel.h"
 #import "LikeitemModel.h"
 
-@implementation GoodsCollectionCell
+@implementation HorzonItemCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
