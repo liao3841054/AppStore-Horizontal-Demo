@@ -8,5 +8,4 @@
 
 <img src="./IMG_2471.PNG" width = "320" alt="半糖" align=center />
 
-
 ----------
