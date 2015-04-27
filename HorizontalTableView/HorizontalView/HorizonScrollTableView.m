@@ -11,7 +11,6 @@
 #import "CategoryModel.h"
 #import "CollectModel.h"
 //#import "CenterEmptyView.h"
-
  NSString *const KTopicCollctionCell = @"TopicCollctionCell";
  NSString *const KGoodsCollectionCell = @"GoodsCollectionCell";
 
