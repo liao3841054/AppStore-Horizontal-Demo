@@ -20,7 +20,6 @@
 		92DA64B61AEA27F600EB0135 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64B51AEA27F600EB0135 /* BaseModel.m */; };
 		92DA64BE1AEA49AF00EB0135 /* HorizonScrollTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64BD1AEA49AF00EB0135 /* HorizonScrollTableView.m */; };
 		92DA64C11AEA4AF900EB0135 /* GoodsCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C01AEA4AF900EB0135 /* GoodsCollectionCell.m */; };
-		92DA64C41AEA4BBB00EB0135 /* NSObject+ViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C31AEA4BBB00EB0135 /* NSObject+ViewConstraint.m */; };
 		92DA64C71AEA4E2600EB0135 /* UIView+ViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */; };
 		92DA64CC1AEA638700EB0135 /* LikeitemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64C91AEA638700EB0135 /* LikeitemModel.m */; };
 		92DA64CD1AEA638700EB0135 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA64CB1AEA638700EB0135 /* CategoryModel.m */; };
@@ -64,10 +63,8 @@
 		92DA64BD1AEA49AF00EB0135 /* HorizonScrollTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizonScrollTableView.m; sourceTree = "<group>"; };
 		92DA64BF1AEA4AF900EB0135 /* GoodsCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsCollectionCell.h; sourceTree = "<group>"; };
 		92DA64C01AEA4AF900EB0135 /* GoodsCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsCollectionCell.m; sourceTree = "<group>"; };
-		92DA64C21AEA4BBB00EB0135 /* NSObject+ViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ViewConstraint.h"; sourceTree = "<group>"; };
-		92DA64C31AEA4BBB00EB0135 /* NSObject+ViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ViewConstraint.m"; sourceTree = "<group>"; };
-		92DA64C51AEA4E2600EB0135 /* UIView+ViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewConstraint.h"; sourceTree = "<group>"; };
-		92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewConstraint.m"; sourceTree = "<group>"; };
+		92DA64C51AEA4E2600EB0135 /* UIView+ViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ViewConstraint.h"; path = "../AppStore(Horizontal)Demo/UIView+ViewConstraint.h"; sourceTree = "<group>"; };
+		92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ViewConstraint.m"; path = "../AppStore(Horizontal)Demo/UIView+ViewConstraint.m"; sourceTree = "<group>"; };
 		92DA64C81AEA638700EB0135 /* LikeitemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeitemModel.h; sourceTree = "<group>"; };
 		92DA64C91AEA638700EB0135 /* LikeitemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeitemModel.m; sourceTree = "<group>"; };
 		92DA64CA1AEA638700EB0135 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
@@ -92,6 +89,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92D8C7DE1AEDE91700D22B37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92DA648E1AEA26ED00EB0135 /* ViewController.h */,
+				92DA648F1AEA26ED00EB0135 /* ViewController.m */,
+				9239DE371AEBB1F900D8C151 /* DetailViewCtroller.h */,
+				9239DE381AEBB1F900D8C151 /* DetailViewCtroller.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		92DA647B1AEA26EC00EB0135 = {
 			isa = PBXGroup;
 			children = (
@@ -114,21 +122,15 @@
 		92DA64861AEA26ED00EB0135 /* AppStore(Horizontal)Demo */ = {
 			isa = PBXGroup;
 			children = (
+				92D8C7DE1AEDE91700D22B37 /* Controller */,
+				92DA64B81AEA280400EB0135 /* Model */,
 				92DA64AD1AEA279200EB0135 /* HorizontalView */,
 				92DA648B1AEA26ED00EB0135 /* AppDelegate.h */,
 				92DA648C1AEA26ED00EB0135 /* AppDelegate.m */,
-				92DA648E1AEA26ED00EB0135 /* ViewController.h */,
-				92DA648F1AEA26ED00EB0135 /* ViewController.m */,
 				92DA64911AEA26ED00EB0135 /* Main.storyboard */,
 				92DA64941AEA26ED00EB0135 /* Images.xcassets */,
 				92DA64961AEA26ED00EB0135 /* LaunchScreen.xib */,
 				92DA64871AEA26ED00EB0135 /* Supporting Files */,
-				92DA64C21AEA4BBB00EB0135 /* NSObject+ViewConstraint.h */,
-				92DA64C31AEA4BBB00EB0135 /* NSObject+ViewConstraint.m */,
-				92DA64C51AEA4E2600EB0135 /* UIView+ViewConstraint.h */,
-				92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */,
-				9239DE371AEBB1F900D8C151 /* DetailViewCtroller.h */,
-				9239DE381AEBB1F900D8C151 /* DetailViewCtroller.m */,
 			);
 			path = "AppStore(Horizontal)Demo";
 			sourceTree = "<group>";
@@ -162,11 +164,12 @@
 		92DA64AD1AEA279200EB0135 /* HorizontalView */ = {
 			isa = PBXGroup;
 			children = (
+				92DA64C51AEA4E2600EB0135 /* UIView+ViewConstraint.h */,
+				92DA64C61AEA4E2600EB0135 /* UIView+ViewConstraint.m */,
 				92DA64BF1AEA4AF900EB0135 /* GoodsCollectionCell.h */,
 				92DA64C01AEA4AF900EB0135 /* GoodsCollectionCell.m */,
 				92DA64BC1AEA49AF00EB0135 /* HorizonScrollTableView.h */,
 				92DA64BD1AEA49AF00EB0135 /* HorizonScrollTableView.m */,
-				92DA64B81AEA280400EB0135 /* Model */,
 				92DA64AE1AEA27A500EB0135 /* HorizontalScrollCell.h */,
 				92DA64AF1AEA27A500EB0135 /* HorizontalScrollCell.m */,
 				92DA64B11AEA27D900EB0135 /* BaseTableViewCell.h */,
@@ -187,6 +190,7 @@
 				92DA64B51AEA27F600EB0135 /* BaseModel.m */,
 			);
 			name = Model;
+			path = ../HorizontalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +303,6 @@
 				92DA64B01AEA27A500EB0135 /* HorizontalScrollCell.m in Sources */,
 				92DA64901AEA26ED00EB0135 /* ViewController.m in Sources */,
 				92DA648D1AEA26ED00EB0135 /* AppDelegate.m in Sources */,
-				92DA64C41AEA4BBB00EB0135 /* NSObject+ViewConstraint.m in Sources */,
 				92DA648A1AEA26ED00EB0135 /* main.m in Sources */,
 				92DA64CC1AEA638700EB0135 /* LikeitemModel.m in Sources */,
 			);
