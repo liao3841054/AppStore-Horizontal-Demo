@@ -10,10 +10,10 @@
 #import "BaseModel.h"
 @interface GoodsCollectionCell : UICollectionViewCell
 {
-    UIImageView *_mGoodsPic;
+    UIImageView *_mCoverView;
     UIView      *_mDescView;
-    UILabel     *_mPrice;
-    UILabel     *_mTitle;
+    UILabel     *_mDecLabel;
+    UILabel     *_mTitleLabel;
 }
 
 - (void)isFristTypeCell:(NSString *)type;

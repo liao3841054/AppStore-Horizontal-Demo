@@ -26,47 +26,49 @@
 - (void)setUpView
 {
     UIView *superView = self.contentView;
-    _mGoodsPic = [[UIImageView alloc] initWithFrame:CGRectZero];
-    _mGoodsPic.backgroundColor = RGB(245, 245, 245);
-    _mGoodsPic.layer.cornerRadius =4;
-    _mGoodsPic.layer.masksToBounds = YES;
-    _mGoodsPic.contentMode = UIViewContentModeScaleAspectFill;
-    _mGoodsPic.opaque = YES;
-    [superView addSubview:_mGoodsPic];
+    _mCoverView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    _mCoverView.backgroundColor = RGB(245, 245, 245);
+    _mCoverView.layer.cornerRadius =4;
+    _mCoverView.layer.masksToBounds = YES;
+    _mCoverView.contentMode = UIViewContentModeScaleAspectFill;
+    _mCoverView.opaque = YES;
+    [superView addSubview:_mCoverView];
     
-    _mTitle = [[UILabel alloc] initWithFrame:CGRectZero];
-    _mTitle.textAlignment = NSTextAlignmentCenter;
-    _mTitle.textColor = RGB(150, 150, 150);
-    _mTitle.font = [UIFont systemFontOfSize:12];
-    [superView addSubview:_mTitle];
+    _mTitleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    _mTitleLabel.textAlignment = NSTextAlignmentCenter;
+    _mTitleLabel.textColor = RGB(150, 150, 150);
+    _mTitleLabel.font = [UIFont systemFontOfSize:12];
+    [superView addSubview:_mTitleLabel];
     
-    _mPrice = [[UILabel alloc] initWithFrame:CGRectZero];
-    _mPrice.textAlignment = NSTextAlignmentCenter;
-    _mPrice.textColor = RGB(150, 150, 150);
-    _mPrice.font = [UIFont systemFontOfSize:12];;
-    [superView addSubview:_mPrice];
+    _mDecLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    _mDecLabel.textAlignment = NSTextAlignmentCenter;
+    _mDecLabel.textColor = RGB(150, 150, 150);
+    _mDecLabel.font = [UIFont systemFontOfSize:12];;
+    [superView addSubview:_mDecLabel];
     
+    /*
+        基本原理：
+        View1（上下左右） -(相对于)- View2(上下左右) 距离值（XXX）
+     */
+    _mCoverView.translatesAutoresizingMaskIntoConstraints = NO;
+    // 封面的顶部 相对于 contentView 顶部往下10个像素
+    [_mCoverView addConstraint:NSLayoutAttributeTop toItem:superView targetlayoutAttribte:NSLayoutAttributeTop withValue:10];
+    // 封面宽度和 contentView宽度是相等的
+    [_mCoverView addConstraint:NSLayoutAttributeWidth toItem:superView targetlayoutAttribte:NSLayoutAttributeWidth withValue:0];
+    // 封面宽度和 左边 和 contentView 左边对齐 相距0像素
+    [_mCoverView addConstraint:NSLayoutAttributeLeading toItem:superView targetlayoutAttribte:NSLayoutAttributeLeading withValue:0];
+    // 封面高度为70像素
+    [_mCoverView addConstraintHeightWithValue:70];
     
-    //上面和_mGoodsPic 底部对其
-    _mGoodsPic.translatesAutoresizingMaskIntoConstraints = NO;
-    [_mGoodsPic addConstraint:NSLayoutAttributeTop toItem:superView targetlayoutAttribte:NSLayoutAttributeTop withValue:10];
-    [_mGoodsPic addConstraint:NSLayoutAttributeWidth toItem:superView targetlayoutAttribte:NSLayoutAttributeWidth withValue:0];
-    [_mGoodsPic addConstraint:NSLayoutAttributeLeading toItem:superView targetlayoutAttribte:NSLayoutAttributeLeading withValue:0];
-    [_mGoodsPic addConstraintHeightWithValue:70];
-    
-    _mTitle.translatesAutoresizingMaskIntoConstraints = NO;
-    //上面和_mGoodsPic 底部对其
-    [_mTitle addConstraint:NSLayoutAttributeTop toItem:_mGoodsPic targetlayoutAttribte:NSLayoutAttributeBottom withValue:10];
-    //上面和_mGoodsPic 底部对其
-    [_mTitle addConstraint:NSLayoutAttributeWidth toItem:_mGoodsPic targetlayoutAttribte:NSLayoutAttributeWidth withValue:0];
-    [_mTitle addConstraint:NSLayoutAttributeCenterX toItem:_mGoodsPic targetlayoutAttribte:NSLayoutAttributeCenterX withValue:0];
+    _mTitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [_mTitleLabel addConstraint:NSLayoutAttributeTop toItem:_mCoverView targetlayoutAttribte:NSLayoutAttributeBottom withValue:10];
+    [_mTitleLabel addConstraint:NSLayoutAttributeWidth toItem:_mCoverView targetlayoutAttribte:NSLayoutAttributeWidth withValue:0];
+    [_mTitleLabel addConstraint:NSLayoutAttributeCenterX toItem:_mCoverView targetlayoutAttribte:NSLayoutAttributeCenterX withValue:0];
 
-    _mPrice.translatesAutoresizingMaskIntoConstraints = NO;
-    //上面和_mGoodsPic 底部对其
-    [_mPrice addConstraint:NSLayoutAttributeTop toItem:_mTitle targetlayoutAttribte:NSLayoutAttributeBottom withValue:2];
-    //上面和_mGoodsPic 底部对其
-    [_mPrice addConstraint:NSLayoutAttributeWidth toItem:_mGoodsPic targetlayoutAttribte:NSLayoutAttributeWidth withValue:0];
-    [_mPrice addConstraint:NSLayoutAttributeCenterX toItem:_mGoodsPic targetlayoutAttribte:NSLayoutAttributeCenterX withValue:0];
+    _mDecLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [_mDecLabel addConstraint:NSLayoutAttributeTop toItem:_mTitleLabel targetlayoutAttribte:NSLayoutAttributeBottom withValue:2];
+    [_mDecLabel addConstraint:NSLayoutAttributeWidth toItem:_mCoverView targetlayoutAttribte:NSLayoutAttributeWidth withValue:0];
+    [_mDecLabel addConstraint:NSLayoutAttributeCenterX toItem:_mCoverView targetlayoutAttribte:NSLayoutAttributeCenterX withValue:0];
 
 }
 
@@ -76,8 +78,8 @@
 
 - (void)hiddenDescView:(BOOL)hidden
 {
-    _mTitle.hidden = hidden;
-    _mPrice.hidden = hidden;
+    _mTitleLabel.hidden = hidden;
+    _mDecLabel.hidden = hidden;
 
 }
 
@@ -93,16 +95,16 @@
     
     UIImage *categateIcon = [UIImage imageNamed:typeName];
     if (categateIcon) {
-        [_mGoodsPic setImage:categateIcon];
+        [_mCoverView setImage:categateIcon];
     }else
-        [_mGoodsPic setImage:[UIImage imageNamed:@"center_default_category"]];
+        [_mCoverView setImage:[UIImage imageNamed:@"center_default_category"]];
         
 }
 
 - (void)isLastTypeCell
 {
     [self hiddenDescView:YES];
-    [_mGoodsPic setImage:[UIImage imageNamed:@"center_item_more"]];
+    [_mCoverView setImage:[UIImage imageNamed:@"center_item_more"]];
 }
 
 
@@ -111,20 +113,20 @@
     [self hiddenDescView:NO];
 
     LikeitemModel *likeItem = (LikeitemModel *)model;
-    _mTitle.text = likeItem.title;
+    _mTitleLabel.text = likeItem.title;
     
     if (![self isEmpty:likeItem.price])
     {
         _mDescView.hidden = NO;
-        _mPrice.text  = likeItem.price;
+        _mDecLabel.text  = likeItem.price;
         
     }else
     {
-        _mPrice.hidden = YES;
+        _mDecLabel.hidden = YES;
 
     }
-    _mGoodsPic.backgroundColor = [likeItem backgroundColor];
-    _mGoodsPic.image = nil;
+    _mCoverView.backgroundColor = [likeItem backgroundColor];
+    _mCoverView.image = nil;
 }
 
 - (UIColor *)randomColor {
