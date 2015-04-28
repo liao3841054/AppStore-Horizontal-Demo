@@ -11,10 +11,8 @@
 #import "CategoryModel.h"
 #import "CollectModel.h"
 //#import "CenterEmptyView.h"
- NSString *const KTopicCollctionCell = @"TopicCollctionCell";
- NSString *const KGoodsCollectionCell = @"GoodsCollectionCell";
 
- NSString *const cellIdentifier = @"GoodsCollectionCell";
+ NSString *const cellIdentifier = @"HorzonItemCell";
 
 @interface HorizonScrollTableView()
 {
@@ -114,7 +112,7 @@
     
     HorzonItemCell *cell;
     {
-        cell = (HorzonItemCell *)[horizontalCellContentsView dequeueReusableCellWithReuseIdentifier:@"GoodsCollectionCell" forIndexPath:contentIndexPath];
+        cell = (HorzonItemCell *)[horizontalCellContentsView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:contentIndexPath];
     }
     CategoryModel *category = [_dataSource objectAtIndex:tableViewIndexPath.row];
     if (contentIndexPath.row == 0 || contentIndexPath.row ==6 ) {
